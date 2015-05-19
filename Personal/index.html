@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!--    <link rel="icon" href="../../favicon.ico">-->
+        <title>My Portfolio</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+        <script type="text/javascript">
+            var hostUrl = 'http://www.worldinmylens.com/';
+            var currentUri = '';
+            var imgUrl = '/themes/img/';
+            var jsLang = {};
+            var zoomGmapToLastMarker = 0;
+            var isMobileVersion = 0;
+        </script>
+        <!-- Custom styles for this template -->
+        <link href="carousel.css" rel="stylesheet">
+        <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/abel:n4:default;abril-fatface:n4:default;aclonica:n4:default;acme:n4:default;actor:n4:default;adamina:n4:default;aguafina-script:n4:default;bigshot-one:n4:default;damion:n4:default;leckerli-one:n4:default;mrs-sheppards:n4:default;niconne:n4:default;norican:n4:default;allura:n4:default.js" type="text/javascript"></script>
+    </head>
+    <!-- NAVBAR
+        ================================================== -->
+    <body>
+        <section>
+            <div class="navbar-wrapper">
+                <div class="container">
+                    <nav class="navbar navbar-inverse navbar-static-top">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <!--              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    </button>-->
+                                <nav class="navbar-brand"> <img src="../images/dews.png" width="30" height="30" class="logo"> <a href="#" style="color: rgba(247,250,255,0.91); font-family: damion; font-style: normal; font-size: x-large; text-decoration: none; font-weight: 400; position: relative; top: 3px;">Lu 
+                                    Gan</a>
+                                </nav>
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#">HOME</a></li>
+                                    <li class="dropdown active">
+                                        <a href="#" class="dropdown-toggle" font-size: medium;" aria-expanded="false" style="color: rgba(255,255,255,1.00); background-color: rgba(0,0,0,0.00); role="button" data-toggle="dropdown">PHOTO GALLERY<span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li class="active"><a href="#2015">2015</a></li>
+                                            <li class="active"><a href="#2014">2014</a></li>
+                                            <li class="active"><a href="#2013">2013</a></li>
+                                            <!--<li><a href="#">2012</a></li>-->
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown active">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color: rgba(255,255,255,1.00); background-color: rgba(0,0,0,0.00); font-size: medium;">SHOWCASE<span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li class="active"><a href="#video">VIDEO</a></li>
+                                            <li class="active"><a href="http://hera.yumcouver.com:5000" target="_blank">WEBSITE</a></li>
+                                            <li class="active"><a href="#">DESIGN</a></li>
+                                            <!--<li><a href="#">2012</a></li>-->
+                                        </ul>
+                                    </li>
+                                    <li><a href="#aboutme" style="color: rgba(255,255,255,1.00); font-size: medium; text-decoration: none;">ABOUT ME</a></li>
+                                    <li><a href="#contact" style="color: rgba(255,255,255,1.00); font-size: medium; text-decoration: none;">CONTACT</a></li>
+                                </ul>
+                            </div>
+                            <div id="navbar">
+                                <!--  <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li class="dropdown">
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Select Year<span class="caret"></span></a>
+                                      <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">2015</a></li>
+                                        <li><a href="#">2014</a></li>
+                                        <li><a href="#">2013</a></li>
+                                        <li><a href="#">2012</a></li>
+                                      </ul>
+                                    </li>
+                                    <li><a href="#about">About Me</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                    </ul>--> 
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Carousel
+                ================================================== -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../images/3577.jpg" width="3000" height="1993" alt="First slide">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <!--<h1>Example headline.</h1>-->
+                                <p>I tool this photo at Stanley Park. It was a sunny day and I noticed this bench near the seashore. I love the word and the memory behind it.</p>
+                                <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>--> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../images/_DSC4203.jpg" width="4912" height="2760" alt="Second slide">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <!--<h1>Another example headline.</h1>-->
+                                <p>When I was at the wharf in North Vancouver, I was touched by the beautiful scenery here. I am very satisfied with this picture.</p>
+                                <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>--> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../images/_DSC4310.jpg" width="4912" height="3264" alt="Third slide">
+                        <div class="container">
+                            <div class="carousel-caption" style="background-color:rgba(209,209,209,0.26)">
+                                <!--<h1>One more for good measure.</h1>-->
+                                <p>This is the night view of downtown, Vancouver. So amazing, isn’t it? </p>
+                                <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>--> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> 
+            </div>
+            <!-- /.carousel --> 
+        </section>
+        <!-- Marketing messaging and featurettes
+            ================================================== --> 
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+        <div class="marketing">
+            <!-- Three columns of text below the carousel -->
+            <div class="row bg2" style="margin-right:0px">
+                <div style="align: center; margin-right: 28px; margin-left: 28px;">
+                    <div class="col-lg-4">
+                        <div class="bg3"margin-right:0px>
+                        	<a href="#video" >
+                            <img class="img-circle imghover" src="../images/play25.png" alt="Generic placeholder image" style="width: 140px; height: 140px; text-shadow: 0px 0px;">
+                            <h2>Video</h2>
+                            <p>A demo reel with multiple video clips produced during the last three years. It shows my skills of photography, video editing and making cool video effects. </p>
+                            <p><a class="newbutton" href="#video" role="button">View &raquo;</a></p>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <div class="bg3">
+                            <a href="http://hera.yumcouver.com:5000" target="_blank"
+                                ><img class="img-circle imghover" src="../images/website.png" alt="Generic placeholder image" style="width: 140px; height: 140px;"></a>
+                            <h2>Website</h2>
+                            <p>Team project: an E-ticket website with a clean interface build by Djando and Python. My role is a frontend developer and some backend parts including data models and server configuration. </p>
+                            <p><a class="newbutton" href="http://hera.yumcouver.com:5000" target="_blank role="button">View &raquo;</a></p>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <div class="bg3">
+                            <img class="img-circle" src="../images/paint.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                            <h2>Design</h2>
+                            <p>Personal design work including icons, comic and posters.(Sorry, this section is under development.)</p>
+                            <p><a class="newbutton" href="#" role="button">View &raquo;</a></p>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-4 --> 
+                </div>
+                <!-- /.div inner --> 
+            </div>
+            <!-- /.row --> 
+            <!-- START THE FEATURETTES --> 
+            <!-- <hr class="featurette-divider">--> 
+            <!--	photos-->
+            <div id="2015" class="bg1" align="center" style="background-color:rgba(34,34,34,1.00); padding-top:60px">
+                <table>
+                    <tbody class="imgs">
+                        <tr>
+                            <td>
+                                <h3>2015</h3>
+                            </td>
+                            <td class="wipe"><img src="../images/15/IMG_1269.jpg" alt=""/></td>
+                            <td>
+                            
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/15/IMG_1229.jpg" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/15/bg_text2.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                                </td>
+                            <td>
+                          
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/15/IMG_1318.jpg" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/15/bg_text3.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+           
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/15/_DSC4924.JPG" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/15/bg_text4.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                                </td>
+                            <td>
+                           
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/15/_DSC4754 (2).JPG" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/15/bg_text5.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                                </td>
+                            <td>
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/15/_DSC4770 (2).JPG" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/15/bg_text6.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                         
+                                </td>
+                            <td><section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/15/IMG_4068.JPG" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/15/bg_text7.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                         
+                                </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/15/_DSC4780.JPG" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/15/bg_text8.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                          
+                                </td>
+                            <td>
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/15/IMG_1215.jpg"  alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/15/bg_text9.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                                
+                                </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="2014" class="bg1" align="center">
+                <table>
+                    <tbody class="imgs">
+                        <tr>
+                            <td>
+                         
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/14/_DSC4259.jpg"  alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                                </td>
+                            <td>
+                                <h3>2014</h3>
+                            </td>
+                            <td>
+                                <!--<img src="../images/14/_DSC4239.jpg" alt=""/ class="jsLazyLoad">-->
+                                <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/14/_DSC4239.jpg" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                            </td>
+                            <td>
+                            <!--<img src="../images/14/315.jpg" alt=""/>-->
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/14/315.jpg" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>
+    
+                                <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/14/_DSC4208.jpg"  alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                            </td>
+                            <td>
+                
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/14/4049.jpg" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                                </td>
+                            <td>
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/14/_DSC4222.jpg" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                            </td>
+                            <td>
+              
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/14/_DSC4392.jpg" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                            
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/14/_DSC4215.jpg" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                            </td>
+                            <td>
+                
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/14/_DSC4297.jpg" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--   <hr class="featurette-divider">-->
+            <div  id="2013" class="bg1" align="center" style="background-color:rgba(67,66,66,1.00); padding-bottom:60px">
+                <table>
+                    <tbody class="imgs">
+                        <tr>
+                            <td>
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/13/_DSC2364.jpg"  alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                            </td>
+                            <td>
+                          
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/13/2387.jpg"  alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                            </td>
+                            <td>
+                                <h3>2013</h3>
+                            </td>
+                            <td>
+                        
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/13/_DSC0753.JPG" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/13/_DSC2208 (2).jpg"  alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                            </td>
+                            <td>
+               
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/13/DSC05363.JPG"  alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                                </td>
+                            <td>
+                    
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/13/85.jpg" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                            </td>
+                            <td>
+                     
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/13/_DSC2320.jpg" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                        
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/13/2400.jpg" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                            </td>
+                            <td>
+                 
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/13/_DSC2410.JPG" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+                                </td>
+                            <td>
+                            <section class="ir-grid _ir-grid-ColspanOf4 wiml-gallerieslist PkBgBottom _Modulo-1 jsGalleryHome-List picsize">
+                                    <div class="gmap-contener ir-grid-item jsGalleryHome-Map" style="display:none">
+                                        <div class="gmap" style="overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"> </div>
+                                    </div>
+                                    <article class="ir-grid-item jsGalleryHome-ListItem">
+                                        <a class="anchor">
+                                            <div class="mover">
+                                                <div class="intro"> <img src="../images/13/_DSC0796.JPG" alt="" class="jsLazyLoad"> </div>
+                                                <div class="hover">
+                                                    <div class="_VAlignedText">
+                                                        <header> <img src="../images/bg_text1.png"  alt=""/> </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </section>
+            
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div id="video" class="vborder">        
+<center> <video class="vmi" width="900" align="middle" controls>
+
+  <source src="Demo Reel (BGM_I dunno_by grapes).mp4" type="video/mp4">
+<!--  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.-->
+
+</video></center>
+</div>
+            <!--    <hr class="featurette-divider">-->
+            <div id="aboutme" class="row featurette height22" style="margin-right:0px; margin-top: 0px; background-image: url(../images/5552.png); background-position: 100% 35%; background-size: 100%;">
+                <div class="col-me">
+                    <h2 class="aboutme"> About Me</h2>
+                    <p class="lead">Hi, I am Lu Gan, an international student now majoring in Computing Science at SFU. This is my first year in Vancouver. Life is quite amazing here. I have learned a lot of professional theory in classes and practiced my design and programming ability through many projects. The beauty of the combination between design and coding really impresses me and I am so excited to apply my skills into the real market. I am ready to meet a challenge!</p>
+                </div>
+            </div>
+            <!-- /END THE FEATURETTES --> 
+        </div>
+        
+
+        
+    <!-- /.container --> 
+        <footer id="contact">
+	<div class="myfooter">
+
+			<div class="footdiv">
+				<ul class="footlist">
+                <li><img src="../../images/dews.png" width="30" height="30" alt=""/></li>
+				  <li style="list-style-type:none"><strong>Lu Gan</strong></li>
+                  <li>     </li>
+				  <li>Simon Fraser University</li>
+	      				<li>Computing Science</li>
+                        <ul class="footlist2">
+					<li>ganlug@sfu.ca</li>
+					<li>604-722-0571</li>
+                    </ul>
+				
+				</ul>
+			</div>
+
+	
+		
+	</div>
+</footer>
+
+        <!-- Bootstrap core JavaScript
+            ================================================== --> 
+        <!-- Placed at the end of the document so the pages load faster --> 
+        <script src="jquery.min.js"></script> 
+        <script src="bootstrap.min.js"></script> 
+        <script src="docs.min.js"></script> 
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> 
+        <script src="min.js"></script>
+    </body>
+</html>
