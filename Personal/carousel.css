@@ -59,7 +59,16 @@ body {
 	height: 670px;
 	bottom: 0px;
 }
-
+@media (max-width:480px){
+	.carousel-inner > .item > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	height: 300px;
+	bottom: 0px;
+}
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -140,12 +149,49 @@ body p {
 	opacity: 0.7;
 }
 
+/* DRAWINGS CSS
+-------------------------------------------------- */
+.draw_topbg {
+	background-image: url(../images/menu2.jpg); 
+	background-position: 100% 35%; 
+	background-size: 100%;
+	padding-top:20px;
+	
+/*	position: fixed;
+	z-index:1030;*/
+	}
+	
+.draw_row {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: rgba(34,34,34,1.00);
+	}
 
+	
+.draw_name {
+	color:#F39;
+	font-size:24px;
+	}
+/*.portfolio-item{
+	background-color:rgba(187,187,187,0.68);
+	border-radius:15px;
+	}*/
+	
+.draw_p {
+	text-align:justify; 
+	color:rgba(224,224,224,0.8);
+	}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
 @media (min-width: 768px) {
+	/*navbar custom*/
+  .draw_nav {
+	  left:560px;
+	  }
   /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 20px;
