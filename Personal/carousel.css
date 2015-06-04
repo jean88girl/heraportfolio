@@ -149,6 +149,35 @@ body p {
 	opacity: 0.7;
 }
 
+
+/* VIDEO CSS
+-------------------------------------------------- */
+.video_block{
+
+	padding-top:15px;
+	padding-bottom:10px;
+	margin-left:124px;
+	margin-right:124px;
+	background-color:rgba(108,108,108,0.60);
+	border-radius:6px;
+	color:rgba(255,255,255,0.90);
+	}
+
+.video_btn{
+	background-color: rgba(255,255,255,0.00);
+	padding-top: 3px;
+	padding-right: 9px;
+	padding-bottom: 3px;
+	padding-left: 9px;
+	border: 1pt solid rgba(255,255,255,1.00);
+	border-radius: 2px;
+	color: rgba(255,255,255,1.00);
+	text-decoration: none;
+	font-weight: 270;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	}
+
 /* DRAWINGS CSS
 -------------------------------------------------- */
 .draw_topbg {
